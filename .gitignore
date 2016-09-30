@@ -1,0 +1,14 @@
+Carthage
+# macOS
+.DS_Store
+
+# Xcode
+
+## Other
+xcuserdata
+
+# Carthage
+Carthage/Build
+
+# Frameworks
+LZQRCode.framework
