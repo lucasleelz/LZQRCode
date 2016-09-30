@@ -11,7 +11,7 @@ import AVFoundation
 
 public class ScanCodeView: UIView {
     
-    public var delegate: ScanCodeViewDelegate?
+    public weak var delegate: ScanCodeViewDelegate?
     
     lazy var device: AVCaptureDevice = {
         return AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -75,12 +75,14 @@ public class ScanCodeView: UIView {
     }
 }
 
-public protocol ScanCodeViewDelegate {
+// MARK: - AVCaptureMetadataOutputObjectsDelegate
+
+public protocol ScanCodeViewDelegate: class {
     
     func scanCodeView(scanCodeView: ScanCodeView, didScanCodeResult codeResult: String)
 }
 
-// MARK: AVCaptureMetadataOutputObjectsDelegate
+// MARK: - AVCaptureMetadataOutputObjectsDelegate
 
 extension ScanCodeView: AVCaptureMetadataOutputObjectsDelegate {
     
