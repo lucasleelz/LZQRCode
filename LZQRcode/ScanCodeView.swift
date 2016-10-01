@@ -9,9 +9,9 @@
 import UIKit
 import AVFoundation
 
-public class ScanCodeView: UIView {
+open class ScanCodeView: UIView {
     
-    public weak var delegate: ScanCodeViewDelegate?
+    weak public var delegate: ScanCodeViewDelegate?
     
     lazy var device: AVCaptureDevice = {
         return AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -51,6 +51,8 @@ public class ScanCodeView: UIView {
         self.setupViews()
     }
     
+    var aaa: Int?
+    
     private func setupViews() {
         self.previewLayer = AVCaptureVideoPreviewLayer(session: self.session)
         
@@ -59,7 +61,7 @@ public class ScanCodeView: UIView {
         }
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         self.previewLayer?.frame = self.bounds
@@ -75,7 +77,7 @@ public class ScanCodeView: UIView {
     }
 }
 
-// MARK: - AVCaptureMetadataOutputObjectsDelegate
+// MARK: - ScanCodeViewDelegate
 
 public protocol ScanCodeViewDelegate: class {
     

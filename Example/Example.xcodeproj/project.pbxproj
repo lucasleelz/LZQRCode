@@ -12,18 +12,18 @@
 		723225621D9DFD320051FD15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723225601D9DFD320051FD15 /* Main.storyboard */; };
 		723225641D9DFD320051FD15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723225631D9DFD320051FD15 /* Assets.xcassets */; };
 		723225671D9DFD320051FD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723225651D9DFD320051FD15 /* LaunchScreen.storyboard */; };
-		723225891D9E524B0051FD15 /* LZQRcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723225881D9E524B0051FD15 /* LZQRcode.framework */; };
-		7232258A1D9E524B0051FD15 /* LZQRcode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 723225881D9E524B0051FD15 /* LZQRcode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		72E5981C1D9FBA9A00A282FB /* LZQRcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5981B1D9FBA9A00A282FB /* LZQRcode.framework */; };
+		72E5981D1D9FBA9A00A282FB /* LZQRcode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72E5981B1D9FBA9A00A282FB /* LZQRcode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		723225711D9DFE240051FD15 /* Embed Frameworks */ = {
+		72E5981A1D9FBA3C00A282FB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7232258A1D9E524B0051FD15 /* LZQRcode.framework in Embed Frameworks */,
+				72E5981D1D9FBA9A00A282FB /* LZQRcode.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		723225631D9DFD320051FD15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723225661D9DFD320051FD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723225681D9DFD320051FD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		723225881D9E524B0051FD15 /* LZQRcode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LZQRcode.framework; sourceTree = "<group>"; };
+		72E5981B1D9FBA9A00A282FB /* LZQRcode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LZQRcode.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723225891D9E524B0051FD15 /* LZQRcode.framework in Frameworks */,
+				72E5981C1D9FBA9A00A282FB /* LZQRcode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		723225501D9DFD320051FD15 = {
 			isa = PBXGroup;
 			children = (
-				723225881D9E524B0051FD15 /* LZQRcode.framework */,
+				72E5981B1D9FBA9A00A282FB /* LZQRcode.framework */,
 				7232255B1D9DFD320051FD15 /* Example */,
 				7232255A1D9DFD320051FD15 /* Products */,
 			);
@@ -93,7 +93,7 @@
 				723225551D9DFD320051FD15 /* Sources */,
 				723225561D9DFD320051FD15 /* Frameworks */,
 				723225571D9DFD320051FD15 /* Resources */,
-				723225711D9DFE240051FD15 /* Embed Frameworks */,
+				72E5981A1D9FBA3C00A282FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,6 +332,7 @@
 				7232256D1D9DFD320051FD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
