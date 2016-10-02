@@ -1,5 +1,5 @@
 # LZQRCode
-扫码框架
+Scan Code Framework
 
 ## Requirements
 
